@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Beyond Olympus — For My Dearest Esther ✨</title>
+  <meta name="description" content="A celestial love tribute to Esther, whose quiet smile outshines the ancient gods of Olympus.">
+  <meta name="theme-color" content="#ffe8ee">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="For Esther">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Google Fonts for High-End Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@600;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="envelope-active">
+
+  <!-- Canvas for Petals & Sparkle Magic -->
+  <canvas id="magicCanvas"></canvas>
+
+  <!-- Ambient Sound & Action Pill Floating Bar -->
+  <header class="top-nav-bar" id="topNav">
+    <div class="nav-brand">
+      <span class="sparkle-icon">✦</span>
+      <span class="nav-title">For Esther</span>
+      <span class="sparkle-icon">✦</span>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-btn music-btn" id="musicToggleBtn" title="Toggle Ambient Serenade" aria-label="Toggle music">
+        <span class="music-icon" id="musicIcon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+          </svg>
+        </span>
+        <span class="music-label" id="musicLabel">Music</span>
+        <div class="music-bars" id="musicBars">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+      <button class="nav-btn love-shower-btn" id="topLoveBtn" title="Shower Esther with Love">
+        <span class="btn-heart">💖</span>
+        <span class="btn-text">Shower Love</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- STAGE 1: THE INTERACTIVE WAX-SEALED ENVELOPE OVERLAY -->
+  <div class="envelope-overlay" id="envelopeScreen">
+    <div class="envelope-vibe-glow"></div>
+    <div class="envelope-wrapper">
+      
+      <div class="envelope-card-container">
+        <!-- Floating Romantic Badge -->
+        <div class="envelope-tag">
+          <span class="envelope-tag-crown">👑</span>
+          <span>A Royal Letter For Her Highness</span>
+        </div>
+
+        <h1 class="envelope-heading">My Lady, Esther</h1>
+        <p class="envelope-sub">A message whispered from the stars, sealed with devotion.</p>
+
+        <!-- 3D Interactive Envelope -->
+        <div class="envelope-box" id="envelopeBox" role="button" tabindex="0" aria-label="Open your love letter">
+          
+          <div class="envelope-front">
+            <img src="assets/envelope.jpg" alt="Wax sealed envelope for Esther" class="envelope-real-img" id="envelopeImg" onerror="this.style.display='none'">
+            
+            <!-- Graphic fallback/overlay elements -->
+            <div class="envelope-paper-texture">
+              <div class="envelope-flap-top"></div>
+              <div class="envelope-ribbon"></div>
+              
+              <!-- Wax Seal Button -->
+              <div class="wax-seal" id="waxSeal">
+                <div class="wax-seal-inner">
+                  <span class="monogram">E</span>
+                  <div class="seal-ring"></div>
+                </div>
+                <div class="seal-glow-pulse"></div>
+              </div>
+
+              <div class="envelope-recipient-badge">
+                <span class="recipient-title">To Esther</span>
+                <span class="recipient-sub">The One Who Outshines The Gods</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pulsing instruction -->
+          <div class="open-instruction">
+            <span class="finger-tap">✨</span>
+            <span class="tap-text">Tap the Golden Seal to Open</span>
+            <span class="finger-tap">✨</span>
+          </div>
+
+        </div>
+
+        <div class="envelope-hint">Turn your volume up for a celestial experience 🎶</div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- STAGE 2: THE MAIN SANCTUARY (REVEALED ON UNSEALING) -->
+  <main class="sanctuary-container" id="sanctuaryMain">
+
+    <!-- HERO SECTION: OLYMPUS IN AWE -->
+    <section class="hero-section">
+      <div class="hero-backdrop" style="background-image: url('assets/sanctuary.jpg');">
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="divine-badge">
+          <span class="star-accent">✧</span>
+          <span>A TRIBUTE BEYOND OLYMPUS</span>
+          <span class="star-accent">✧</span>
+        </div>
+
+        <h1 class="hero-title">
+          When Olympus <br>
+          <span class="title-highlight">Falls Silent</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Dedicated to the breathtaking woman whose quiet smile made even the gods lay down their crowns.
+        </p>
+
+        <div class="hero-scroll-invite">
+          <span>Read Your Love Poem</span>
+          <div class="scroll-arrow">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M7 10l5 5 5-5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION: THE LOVE POEM (ILLUMINATED PARCHMENT SCROLL) -->
+    <section class="scroll-section" id="poemSection">
+      <div class="parchment-frame">
+        <div class="parchment-gold-border"></div>
+        <div class="filigree-corner top-left"></div>
+        <div class="filigree-corner top-right"></div>
+        <div class="filigree-corner bottom-left"></div>
+        <div class="filigree-corner bottom-right"></div>
+
+        <header class="parchment-header">
+          <div class="parchment-crest">
+            <span class="crest-icon">🪞</span>
+          </div>
+          <span class="parchment-label">AN ODE TO ESTHER</span>
+          <h2 class="parchment-title">The Beauty That Humbled The Gods</h2>
+          <div class="header-divider">
+            <span class="divider-line"></span>
+            <span class="divider-heart">❦</span>
+            <span class="divider-line"></span>
+          </div>
+        </header>
+
+        <!-- THE POEM IN CINEMATIC STANZAS -->
+        <article class="poem-body">
+
+          <!-- Stanza 1 -->
+          <div class="poem-stanza" data-stanza="1">
+            <div class="stanza-marker">I</div>
+            <p class="stanza-text">
+              They say <span class="poet-highlight" data-tooltip="The legendary goddess of passion & beauty">Aphrodite</span> was the most beautiful woman the gods had ever seen. 
+              I believe they simply <span class="poet-highlight" data-tooltip="Centuries had to wait for perfection">lived too early to meet you</span>.
+            </p>
+          </div>
+
+          <!-- Stanza 2 -->
+          <div class="poem-stanza highlight-block" data-stanza="2">
+            <div class="stanza-marker">II</div>
+            <p class="stanza-text">
+              For if the goddess of beauty herself stood before me, <span class="poet-highlight" data-tooltip="All the gold in the heavens could not compare">crowned in gold</span>, 
+              while you stood beside her wearing nothing but that <span class="poet-highlight sacred-highlight" data-tooltip="Your quiet smile — the one that stops my heartbeat">quiet smile</span>...
+            </p>
+            <div class="poetic-emphasis">
+              “Forgive me, my lady, but Olympus would lose my attention.”
+            </div>
+          </div>
+
+          <!-- Stanza 3 -->
+          <div class="poem-stanza" data-stanza="3">
+            <div class="stanza-marker">III</div>
+            <p class="stanza-text">
+              Let poets praise Aphrodite. Let kings carve her face into marble. Let entire kingdoms kneel and call her divine. 
+              <br><br>
+              <span class="poet-highlight golden-highlight" data-tooltip="Out of billions of souls, my heart knows only one">I would still search every crowded hall for you.</span>
+            </p>
+          </div>
+
+          <!-- Stanza 4 -->
+          <div class="poem-stanza" data-stanza="4">
+            <div class="stanza-marker">IV</div>
+            <p class="stanza-text">
+              Because Aphrodite may have taught the ancient world what beauty was, but had those poets seen 
+              <span class="poet-highlight" data-tooltip="Stars live inside your gaze">your eyes</span>, heard 
+              <span class="poet-highlight" data-tooltip="My absolute favorite sound in this universe">your laugh</span>, or watched the way you 
+              <span class="poet-highlight sacred-highlight" data-tooltip="Sitting with you turns an ordinary day into pure magic">make an ordinary moment feel sacred</span>...
+            </p>
+            <div class="poetic-climax">
+              They would have put down their pens.
+            </div>
+          </div>
+
+          <!-- Grand Conclusion -->
+          <div class="poem-crescendo">
+            <div class="crescendo-quote">
+              For beauty may have once belonged to the gods...
+            </div>
+            <div class="crescendo-finale">
+              ...but now, Esther, it belongs to you.
+            </div>
+          </div>
+
+        </article>
+
+        <!-- Signature Footer -->
+        <footer class="parchment-signature">
+          <div class="wax-stamp-small">
+            <span>E</span>
+          </div>
+          <div class="signature-details">
+            <span class="written-by">Forever captivated by your light,</span>
+            <span class="signature-name">Forever Yours 💖</span>
+          </div>
+        </footer>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION: THE CELESTIAL PORTRAIT & SPOTLIGHT -->
+    <section class="spotlight-section">
+      <div class="spotlight-container">
+        
+        <div class="spotlight-image-col">
+          <div class="celestial-frame">
+            <div class="frame-aurora"></div>
+            <img src="assets/portrait.jpg" alt="Esther Celestial Radiance" class="portrait-img" loading="lazy">
+            <div class="portrait-caption">
+              <span class="caption-sparkle">✨</span>
+              <span>Crowned in starlight, glowing with grace</span>
+              <span class="caption-sparkle">✨</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="spotlight-text-col">
+          <div class="section-tag">THE DIVINE TRUTH</div>
+          <h2 class="spotlight-title">More Radiant Than Any Myth</h2>
+          <p class="spotlight-desc">
+            The ancient Greeks wrote epics about sirens and deities because they had never witnessed you walking into a room. Your presence doesn’t demand marble statues — it transforms real moments into timeless memories.
+          </p>
+
+          <div class="divine-attributes">
+            <div class="attribute-pill">
+              <span class="pill-icon">🌟</span>
+              <div>
+                <strong>Her Eyes</strong>
+                <p>Gentle galaxies where peace is found.</p>
+              </div>
+            </div>
+            <div class="attribute-pill">
+              <span class="pill-icon">🌸</span>
+              <div>
+                <strong>Her Laugh</strong>
+                <p>The melody that heals every tired soul.</p>
+              </div>
+            </div>
+            <div class="attribute-pill">
+              <span class="pill-icon">✨</span>
+              <div>
+                <strong>Her Quiet Smile</strong>
+                <p>The light that outshines golden Olympus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION: OLYMPUS VS ESTHER INTERACTIVE COMPARISON -->
+    <section class="comparison-section">
+      <div class="section-header">
+        <span class="section-badge">AN HONEST COMPARISON</span>
+        <h2 class="section-title">Why Olympus Cannot Compete With Esther</h2>
+        <p class="section-desc">Tap each tablet to see why the gods pale beside your real grace.</p>
+      </div>
+
+      <div class="cards-grid">
+        
+        <!-- Card 1 -->
+        <div class="myth-card" tabindex="0">
+          <div class="myth-card-inner">
+            <div class="myth-icon">👑</div>
+            <div class="myth-versus">
+              <span class="myth-god">Golden Crowns of Olympus</span>
+              <span class="vs-badge">VS</span>
+              <span class="myth-esther">Esther’s Quiet Smile</span>
+            </div>
+            <p class="myth-verdict">
+              Deities needed forged gold and thundering lightning just to turn heads. You only need to smile softly, and my entire universe pauses to admire you.
+            </p>
+            <div class="card-sparkle">✦</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="myth-card" tabindex="0">
+          <div class="myth-card-inner">
+            <div class="myth-icon">🏛️</div>
+            <div class="myth-versus">
+              <span class="myth-god">Carved Marble Temples</span>
+              <span class="vs-badge">VS</span>
+              <span class="myth-esther">Esther’s Sacred Presence</span>
+            </div>
+            <p class="myth-verdict">
+              Kings spent lifetimes carving cold stones that never breathe. You make sitting together on an ordinary evening feel like holy ground.
+            </p>
+            <div class="card-sparkle">✦</div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="myth-card" tabindex="0">
+          <div class="myth-card-inner">
+            <div class="myth-icon">📜</div>
+            <div class="myth-versus">
+              <span class="myth-god">Ancient Greek Poets</span>
+              <span class="vs-badge">VS</span>
+              <span class="myth-esther">Esther’s Soft Voice</span>
+            </div>
+            <p class="myth-verdict">
+              If Homer and Virgil had heard the cadence of your laughter, their ink would have dried unused. No metaphor in literature could ever do you justice.
+            </p>
+            <div class="card-sparkle">✦</div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="myth-card" tabindex="0">
+          <div class="myth-card-inner">
+            <div class="myth-icon">🌌</div>
+            <div class="myth-versus">
+              <span class="myth-god">A Crowded Hall of Gods</span>
+              <span class="vs-badge">VS</span>
+              <span class="myth-esther">Just One Glance at You</span>
+            </div>
+            <p class="myth-verdict">
+              Even if heaven offered a banquet with all the gods in creation, I would still weave through every crowded hall, seeking only the light of your face.
+            </p>
+            <div class="card-sparkle">✦</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION: ENCHANTED FLOWER BOUQUET FOR ESTHER -->
+    <section class="garden-section">
+      <div class="garden-container">
+        <div class="section-header">
+          <span class="section-badge">BLOOM FOR ESTHER</span>
+          <h2 class="section-title">Tap The Flowers To Bloom Your Love Notes</h2>
+          <p class="section-desc">Each petal hides a sincere reason you are adored. Can you bloom all five?</p>
+          <div class="bloom-counter-pill">
+            <span class="bloom-icon">🌸</span>
+            <span>Petals Bloomed: <strong id="bloomCount">0</strong> / 5</span>
+          </div>
+        </div>
+
+        <div class="flowers-grid" id="flowersGrid">
+          
+          <!-- Flower 1 -->
+          <button class="flower-node" data-flower="1" aria-label="Bloom Rose of Warmth">
+            <div class="flower-petal-circle">
+              <span class="flower-emoji">🌹</span>
+            </div>
+            <span class="flower-name">Rose of Warmth</span>
+            <div class="flower-secret">
+              <strong>Your Kindness:</strong>
+              <p>The effortless, genuine tenderness you show to everyone around you.</p>
+            </div>
+          </button>
+
+          <!-- Flower 2 -->
+          <button class="flower-node" data-flower="2" aria-label="Bloom Peony of Radiance">
+            <div class="flower-petal-circle">
+              <span class="flower-emoji">🌸</span>
+            </div>
+            <span class="flower-name">Peony of Radiance</span>
+            <div class="flower-secret">
+              <strong>Your Smile:</strong>
+              <p>The subtle curve of your lips that instantly melts away any sorrow.</p>
+            </div>
+          </button>
+
+          <!-- Flower 3 -->
+          <button class="flower-node" data-flower="3" aria-label="Bloom Lily of Peace">
+            <div class="flower-petal-circle">
+              <span class="flower-emoji">🪷</span>
+            </div>
+            <span class="flower-name">Lily of Peace</span>
+            <div class="flower-secret">
+              <strong>Your Comfort:</strong>
+              <p>Just being near you feels like breathing calm after a long storm.</p>
+            </div>
+          </button>
+
+          <!-- Flower 4 -->
+          <button class="flower-node" data-flower="4" aria-label="Bloom Tulip of Joy">
+            <div class="flower-petal-circle">
+              <span class="flower-emoji">🌷</span>
+            </div>
+            <span class="flower-name">Tulip of Joy</span>
+            <div class="flower-secret">
+              <strong>Your Laughter:</strong>
+              <p>The sweetest symphony that brightens the darkest corners of my heart.</p>
+            </div>
+          </button>
+
+          <!-- Flower 5 -->
+          <button class="flower-node" data-flower="5" aria-label="Bloom Star of Forever">
+            <div class="flower-petal-circle">
+              <span class="flower-emoji">✨</span>
+            </div>
+            <span class="flower-name">Star of Devotion</span>
+            <div class="flower-secret">
+              <strong>My Choice:</strong>
+              <p>In this lifetime and any other, my soul will always choose you, Esther.</p>
+            </div>
+          </button>
+
+        </div>
+
+        <!-- Grand Bloom Celebration Modal Popup -->
+        <div class="all-bloomed-modal" id="allBloomedMsg" role="dialog" aria-modal="true" aria-label="Bloom Celebration">
+          <div class="modal-card">
+            <button class="modal-close-icon" id="closeBloomModalBtn" aria-label="Close celebration">✕</button>
+            <div class="modal-heart">💖✨🌸</div>
+            <h3>All Five Petals Have Bloomed!</h3>
+            <p>Every flower in the universe pales in comparison to the beauty you bring to my days, Esther. You are loved beyond words.</p>
+            <button class="modal-action-btn" id="confirmBloomBtn">My Heart is Full 🌸</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SECTION: THE SECRET LOCKBOX / HEART PROMISE -->
+    <section class="promise-section">
+      <div class="promise-box-card">
+        <div class="lock-graphic" id="lockGraphic">
+          <div class="lock-shackle"></div>
+          <div class="lock-body">
+            <span class="lock-heart-icon">💖</span>
+          </div>
+        </div>
+
+        <h2 class="promise-title">A Sealed Promise To Esther</h2>
+        <p class="promise-teaser" id="promiseTeaser">
+          This heart contains a permanent promise meant only for Esther's eyes.
+        </p>
+
+        <button class="unlock-btn" id="unlockPromiseBtn">
+          <span class="key-icon">🗝️</span>
+          <span id="unlockBtnText">Unlock With Your Love</span>
+        </button>
+
+        <div class="secret-letter-revealed" id="secretLetter">
+          <div class="inner-ribbon"></div>
+          <h3>My Sacred Vow to You, Esther</h3>
+          <p class="vow-text">
+            “No matter how busy the world gets, I promise to always listen when you speak, to celebrate your happiest moments, to hold your hand through the hardest ones, and to never let you forget just how extraordinary you are. 
+            Aphrodite may have belonged to ancient myths, but having you in my reality is the greatest blessing I will ever know.”
+          </p>
+          <div class="vow-badge">✦ Bound By Love & Truth ✦</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION: INTERACTIVE LOVE SHOWER BANNER -->
+    <section class="love-shower-section">
+      <div class="shower-card">
+        <h2 class="shower-title">Do You Know How Cherished You Are?</h2>
+        <p class="shower-desc">Press the button below to shower the entire screen with petals, starlight, and endless love!</p>
+        
+        <button class="giant-love-btn" id="giantLoveBtn">
+          <span class="btn-sparkle">✨</span>
+          <span>Shower Esther With A Million Hearts!</span>
+          <span class="btn-sparkle">💖</span>
+        </button>
+
+        <div class="shower-counter">
+          <span>Love Sent Today: </span>
+          <strong id="loveCounter">1,000,000</strong>
+          <span class="counter-hearts">💕</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER: ETERNAL LOVE NOTE -->
+    <footer class="sanctuary-footer">
+      <div class="footer-blessing">
+        <div class="footer-rose">🌹</div>
+        <p class="footer-quote">
+          “For beauty may have once belonged to the gods... but it found its true home in you, Esther.”
+        </p>
+        <div class="footer-details">
+          <span>Handcrafted with endless love for Esther</span>
+          <span class="footer-dot">•</span>
+          <span>Forever & Always</span>
+        </div>
+      </div>
+
+      <div class="footer-replay-container">
+        <button class="replay-letter-btn" id="reopenEnvelopeBtn">
+          <span>✉️</span> Re-seal & Open Letter Again
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- FLOATING INTERACTIVE FLOWER BURST & LOVE PLENTY WIDGET -->
+  <aside class="flower-frenzy-widget" id="flowerFrenzyWidget" aria-label="Spam flowers for Esther">
+    <div class="frenzy-combo-badge" id="frenzyBadge" role="status" aria-live="polite">
+      <span class="badge-sparkle">🌸</span>
+      <span class="badge-text" id="frenzyText">Tap fast for Love Plenty!</span>
+    </div>
+    
+    <div class="frenzy-btn-wrapper">
+      <!-- Circular SVG Progress Ring -->
+      <svg class="frenzy-progress-ring" viewBox="0 0 76 76" width="76" height="76">
+        <circle class="ring-bg" cx="38" cy="38" r="33"></circle>
+        <circle class="ring-fill" id="frenzyProgressCircle" cx="38" cy="38" r="33"></circle>
+      </svg>
+
+      <button class="frenzy-action-btn" id="frenzyBtn" type="button" aria-label="Shower flowers rapidly for Love Plenty">
+        <span class="frenzy-flower-icon">🌸</span>
+        <span class="frenzy-heart-icon">💖</span>
+        <span class="frenzy-charge-label" id="frenzyChargeLabel">0%</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Container for floating blossoming flower animations from bottom -->
+  <div class="flower-sprout-container" id="flowerSproutContainer" aria-hidden="true"></div>
+
+  <!-- GRAND "LOVE PLENTY" CELEBRATION MODAL -->
+  <div class="love-plenty-modal" id="lovePlentyModal" role="dialog" aria-modal="true" aria-labelledby="lovePlentyTitle">
+    <div class="love-plenty-backdrop" id="lovePlentyBackdrop"></div>
+    <div class="love-plenty-card">
+      <button class="love-plenty-close" id="lovePlentyCloseBtn" aria-label="Close Love Plenty celebration">✕</button>
+      
+      <div class="love-plenty-crest">
+        <span class="crest-halo">✨</span>
+        <span class="crest-main">🌸💖🌸</span>
+        <span class="crest-halo">✨</span>
+      </div>
+
+      <div class="love-plenty-tag">
+        <span>👑 CELESTIAL OVERFLOW 👑</span>
+      </div>
+
+      <h2 class="love-plenty-title" id="lovePlentyTitle">
+        LOVE PLENTY FOR ESTHER!
+      </h2>
+
+      <p class="love-plenty-subtitle">
+        My heart has officially overflowed!
+      </p>
+
+      <div class="love-plenty-quote-box">
+        <div class="quote-flower-deco">❦</div>
+        <p class="love-plenty-poem">
+          You tapped with so much passion that no meter or galaxy could hold it! 
+          <br><br>
+          If they ever ask how much I cherish you, Esther, the answer isn’t small, quiet, or ordinary — <strong>it is Love Plenty. Boundless, unconditional, and forever yours.</strong>
+        </p>
+        <div class="quote-signature">— With all my devotion, always 💖</div>
+      </div>
+
+      <div class="love-plenty-stats">
+        <div class="stat-bubble">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Heart Full</span>
+        </div>
+        <div class="stat-bubble">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Love Plenty</span>
+        </div>
+        <div class="stat-bubble">
+          <span class="stat-number">🌸</span>
+          <span class="stat-label">Bloomed For You</span>
+        </div>
+      </div>
+
+      <div class="love-plenty-actions">
+        <button class="plenty-shower-btn" id="plentyShowerBtn">
+          <span>🌸 Shower Even More Love Plenty! 💖</span>
+        </button>
+        <button class="plenty-continue-btn" id="plentyContinueBtn">
+          <span>My Heart is Yours, Esther 💕</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sweet Interactive Tooltip for hovered poet words -->
+  <div class="poet-tooltip" id="poetTooltip">
+    <span class="tooltip-arrow"></span>
+    <span class="tooltip-content" id="tooltipContent"></span>
+  </div>
+
+  <!-- Audio synthesizers, particles & application logic -->
+  <script src="audio.js"></script>
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
